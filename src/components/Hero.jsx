@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileText } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
@@ -27,19 +28,30 @@ export default function Hero() {
 
           {/* Name */}
 
-          <h1 className="text-7xl md:text-8xl font-bold leading-tight hero-name">
+          <div className="mb-6">
 
-  Moses
+            <TypeAnimation
+              sequence={[
+                "Hey there! 👋",
+                2000,
+                "",
+                500
+              ]}
+              wrapper="h2"
+              speed={40}
+              repeat={Infinity}
+              className="text-cyan-400 text-2xl font-medium mb-4"
+            />
 
-  <br />
+            <h1 className="text-7xl font-bold leading-tight hero-name">
+              I'm Moses
+              <br />
+              <span className="text-cyan-400">
+                Mandraju
+              </span>
+            </h1>
 
-  <span className="text-cyan-400">
-
-    Mandraju
-
-  </span>
-
-</h1>
+          </div>
 
           {/* Subtitle */}
 

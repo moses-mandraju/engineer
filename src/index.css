@@ -171,42 +171,18 @@ body {
     width:100%;
 }
 
-.tech-badge{
-
-    display:inline-block;
-
-    padding:8px 16px;
-
-    margin:6px;
-
-    border-radius:999px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    color:#22d3ee;
-
-    font-size:.85rem;
-}
-
 .timeline-dot{
-
     position:absolute;
-
     width:18px;
-
     height:18px;
-
     border-radius:50%;
-
     background:#22d3ee;
 
-    left:-49px;
+    left:-65px;      /* adjust with line */
+    top:14px;        /* aligns with company name */
 
-    top:8px;
-
-    box-shadow:0 0 20px rgba(34,211,238,.7);
+    box-shadow:
+      0 0 20px rgba(34,211,238,.8);
 }
 
 .background-glow{
@@ -221,3 +197,30 @@ body {
 }
 
 
+.tech-badge{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 18px;
+    margin:6px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#22d3ee;
+
+    font-size:.9rem;
+
+    transition:.3s;
+}
+
+.tech-badge:hover{
+    transform:translateY(-4px);
+    border-color:#22d3ee;
+
+    box-shadow:
+    0 0 20px rgba(34,211,238,.25);
+}

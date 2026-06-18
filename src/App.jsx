@@ -9,6 +9,7 @@ import Achievements from "./components/Achievements";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import ParticlesBackground from "./components/ParticlesBackground";
+import Background from "./components/Background";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
    
       <ParticlesBackground />
+      <Background />
       <Navbar />
 
       <Hero />
