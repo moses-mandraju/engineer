@@ -78,11 +78,11 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="px-8 pb-32">
+    <section className="px-6 sm:px-8 pb-24 sm:pb-32">
 
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-4xl font-bold mb-16">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 sm:mb-16">
           Core Expertise
         </h2>
 
@@ -92,10 +92,10 @@ export default function Skills() {
 
             <div
               key={skill.title}
-              className="glass-card p-10"
+              className="glass-card p-6 sm:p-10"
             >
 
-              <h3 className="text-2xl font-bold mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">
                 {skill.title}
               </h3>
 

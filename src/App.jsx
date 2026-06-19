@@ -15,7 +15,7 @@ function App() {
 
   return (
 
-    <div className="text-white background-glow">
+    <div className="text-white background-glow overflow-x-hidden">
 
    
       <ParticlesBackground />

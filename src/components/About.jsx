@@ -4,7 +4,7 @@ export default function About() {
 
   return (
 
-    <section id="about" className="px-8 py-32">
+    <section id="about" className="scroll-mt-28 px-6 sm:px-8 py-24 sm:py-32">
 
       <div className="max-w-7xl mx-auto">
 
@@ -13,10 +13,10 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: .8 }}
           viewport={{ once: true }}
-          className="glass-card p-12"
+          className="glass-card p-6 sm:p-12"
         >
 
-          <h2 className="text-4xl font-bold mb-10">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10">
 
             About Me
 

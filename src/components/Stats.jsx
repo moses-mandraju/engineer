@@ -28,7 +28,7 @@ export default function Stats() {
 
   return (
 
-    <section className="pb-40 px-8">
+    <section className="pb-28 sm:pb-40 px-6 sm:px-8">
 
       <div className="max-w-7xl mx-auto">
 
@@ -40,13 +40,13 @@ export default function Stats() {
 
               whileHover={{ y: -8 }}
 
-              className="glass-card p-8"
+              className="glass-card p-6 sm:p-8"
 
               key={item.title}
 
             >
 
-              <h2 className="text-3xl font-bold text-cyan-400">
+              <h2 className="text-2xl sm:text-3xl font-bold text-cyan-400 break-words">
 
                 {item.number}
 

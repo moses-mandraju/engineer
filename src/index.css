@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html,
+body {
+    overflow-x:hidden;
+}
+
 .glass-button{
 
   display:flex;
@@ -169,20 +174,6 @@ body {
 .footer-link:hover::after{
 
     width:100%;
-}
-
-.timeline-dot{
-    position:absolute;
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    background:#22d3ee;
-
-    left:-65px;      /* adjust with line */
-    top:14px;        /* aligns with company name */
-
-    box-shadow:
-      0 0 20px rgba(34,211,238,.8);
 }
 
 .background-glow{

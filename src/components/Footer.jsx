@@ -11,6 +11,12 @@ export default function Footer() {
         © 2026 Moses Mandraju
 
       </p>
+      <p className="text-gray-600 text-sm mt-2">
+        Hyderabad, India 🇮🇳
+      </p>
+      <p className="text-gray-500 text-sm mt-6">
+        Built with React • Tailwind CSS • Framer Motion
+      </p>
 
     </footer>
 
