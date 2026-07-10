@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Stats() {
+  const canHover = useMediaQuery("(hover: hover) and (pointer: fine)");
 
   const stats = [
 
@@ -38,7 +40,7 @@ export default function Stats() {
 
             <motion.div
 
-              whileHover={{ y: -8 }}
+              whileHover={canHover ? { y: -8 } : undefined}
 
               className="glass-card p-6 sm:p-8"
 

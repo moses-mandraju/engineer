@@ -215,3 +215,35 @@ body {
     box-shadow:
     0 0 20px rgba(34,211,238,.25);
 }
+
+@media (max-width: 768px) {
+    .site-nav {
+        backdrop-filter: none;
+        background: rgba(9,9,9,.86);
+    }
+
+    .glass-card {
+        backdrop-filter: blur(8px);
+    }
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+    .glass-button,
+    .glass-card,
+    .project-card,
+    .achievement-card,
+    .hero-name,
+    .tech-badge {
+        transition: border-color .2s, background-color .2s, color .2s;
+    }
+
+    .glass-button:hover,
+    .glass-card:hover,
+    .project-card:hover,
+    .achievement-card:hover,
+    .hero-name:hover,
+    .tech-badge:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

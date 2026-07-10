@@ -1,6 +1,18 @@
 import { motion } from "framer-motion";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function ParticlesBackground() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+
+  if (isMobile || reduceMotion) {
+    return (
+      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-16 -left-24 w-[260px] h-[260px] rounded-full bg-cyan-500/10 blur-[80px]" />
+        <div className="absolute bottom-20 -right-24 w-[240px] h-[240px] rounded-full bg-blue-500/10 blur-[80px]" />
+      </div>
+    );
+  }
 
   return (
 

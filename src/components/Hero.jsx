@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileText } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Hero() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+  const shouldAnimateText = !isMobile && !reduceMotion;
+
   return (
     <section className="min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
 
@@ -20,7 +25,7 @@ export default function Hero() {
 
             <span className="px-4 py-2 rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
 
-              🟢 Open to Opportunities
+              Open to Opportunities
 
             </span>
 
@@ -30,18 +35,24 @@ export default function Hero() {
 
           <div className="mb-6">
 
-            <TypeAnimation
-              sequence={[
-                "Hey there! 👋",
-                2000,
-                "",
-                500
-              ]}
-              wrapper="h2"
-              speed={40}
-              repeat={Infinity}
-              className="text-cyan-400 text-2xl font-medium mb-4"
-            />
+            {shouldAnimateText ? (
+              <TypeAnimation
+                sequence={[
+                  "Hey there!",
+                  2000,
+                  "",
+                  500
+                ]}
+                wrapper="h2"
+                speed={40}
+                repeat={Infinity}
+                className="text-cyan-400 text-2xl font-medium mb-4"
+              />
+            ) : (
+              <h2 className="text-cyan-400 text-2xl font-medium mb-4">
+                Hey there!
+              </h2>
+            )}
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-name">
               I'm Moses
@@ -72,6 +83,7 @@ export default function Hero() {
             <a
               href="https://github.com/moses-mandraju"
               target="_blank"
+              rel="noreferrer"
               className="glass-button justify-center sm:justify-start"
             >
               <Github size={18} />
@@ -81,6 +93,7 @@ export default function Hero() {
             <a
               href="https://www.linkedin.com/in/moses-m-5a38b0195/"
               target="_blank"
+              rel="noreferrer"
               className="glass-button justify-center sm:justify-start"
             >
               <Linkedin size={18} />

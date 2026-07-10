@@ -2,7 +2,7 @@ export default function Navbar() {
 
     return (
 
-        <nav className="fixed top-0 left-0 w-full overflow-x-hidden z-50 bg-gradient-to-b from-[#090909]/55 via-[#090909]/25 to-transparent backdrop-blur-md border-b border-cyan-400/10">
+        <nav className="site-nav fixed top-0 left-0 w-full overflow-x-hidden z-50 bg-gradient-to-b from-[#090909]/55 via-[#090909]/25 to-transparent backdrop-blur-md border-b border-cyan-400/10">
 
             <div className="max-w-7xl mx-auto px-6 sm:px-8 py-6">
 
