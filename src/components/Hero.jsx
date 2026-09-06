@@ -55,7 +55,7 @@ export default function Hero() {
             )}
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-name">
-              I'm Moses123
+              I'm Moses
               <br />
               <span className="text-cyan-400">
                 Mandraju
