@@ -24,7 +24,7 @@ export default function PersonalProjects() {
 
         </div>
 
-        <div className="grid lg:grid-cols-[1.15fr_.85fr] gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
 
           <div className="glass-card p-6 sm:p-10 project-card">
 
@@ -55,6 +55,7 @@ export default function PersonalProjects() {
                 <span className="tech-badge">Java</span>
                 <span className="tech-badge">Spring Boot</span>
                 <span className="tech-badge">Scheduler</span>
+                <span className="tech-badge">Firebase</span>
                 <span className="tech-badge">Vercel</span>
               </div>
 
@@ -73,18 +74,54 @@ export default function PersonalProjects() {
 
           </div>
 
-          <div className="glass-card p-6 sm:p-10">
+          <div className="glass-card p-6 sm:p-10 project-card">
 
-            <h3 className="text-xl sm:text-2xl font-bold mb-6 break-words">
-              Project Highlights
-            </h3>
+            <div className="flex flex-col h-full">
 
-            <ul className="text-gray-400 space-y-4">
-              <li>Built to make personal consistency easy to check at a glance.</li>
-              <li>Includes a Java microservice backend for reminder workflows.</li>
-              <li>Uses scheduled jobs to send reminder notifications to users.</li>
-              <li>Pairs a clean React frontend with backend automation.</li>
-            </ul>
+              <div className="flex-1">
+
+                <p className="text-cyan-400 font-semibold mb-4">
+                  Developer Tool
+                </p>
+
+                <h3 className="text-2xl sm:text-4xl font-bold mb-5 break-words">
+                  JSON to Java POJO
+                </h3>
+
+                <p className="text-gray-400 text-base sm:text-lg leading-8 mb-8">
+                  A browser-based developer tool that turns API responses and
+                  nested JSON structures into clean, production-ready Java POJO
+                  classes.
+                </p>
+
+                <ul className="text-gray-400 space-y-3 mb-8">
+                  <li>Configure class names, packages, type mappings, and annotations.</li>
+                  <li>Shape generated models for real backend API responses.</li>
+                  <li>Keep payloads private with browser-only processing.</li>
+                </ul>
+
+              </div>
+
+              <div className="flex flex-wrap gap-3 mb-8">
+                <span className="tech-badge">Java</span>
+                <span className="tech-badge">JSON</span>
+                <span className="tech-badge">Browser-only</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Vercel</span>
+              </div>
+
+              <a
+                href="https://json-to-java-pojo.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="glass-button self-start text-white font-semibold"
+                aria-label="Open JSON to Java POJO live project"
+              >
+                View Project
+                <ExternalLink size={18} aria-hidden="true" />
+              </a>
+
+            </div>
 
           </div>
 
