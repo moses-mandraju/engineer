@@ -55,7 +55,7 @@ export default function Hero() {
             )}
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-name">
-              I'm Moses
+              I'm Moses123
               <br />
               <span className="text-cyan-400">
                 Mandraju
@@ -101,7 +101,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/engineer/Moses_M_Java_Full_Stack_Developer.pdf"
+              href={`${import.meta.env.BASE_URL}Moses_M_Java_Full_Stack_Developer.pdf`}
               className="glass-button justify-center sm:justify-start"
             >
               <FileText size={18} />

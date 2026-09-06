@@ -10,7 +10,7 @@ export default function Navbar() {
 
                     {/* <a href="#">
                         <img
-                            src="/engineer/Moses_M-logo.png"
+                            src={`${import.meta.env.BASE_URL}Moses_M-logo.png`}
                             alt="Moses Logo"
                             className="h-12 w-auto"
                         />

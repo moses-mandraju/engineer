@@ -2,10 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+const isVercel = Boolean(globalThis.process?.env?.VERCEL)
+
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
   ],
-  base: '/engineer/'
+  base: isVercel ? '/' : '/engineer/'
 })
