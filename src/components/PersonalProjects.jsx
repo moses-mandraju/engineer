@@ -26,6 +26,7 @@ export default function PersonalProjects() {
 
         <div className="grid md:grid-cols-2 gap-6">
 
+          {/* Streak Checker */}
           <div className="glass-card p-6 sm:p-10 project-card">
 
             <div className="flex flex-col h-full">
@@ -74,6 +75,7 @@ export default function PersonalProjects() {
 
           </div>
 
+          {/* JSON to Code */}
           <div className="glass-card p-6 sm:p-10 project-card">
 
             <div className="flex flex-col h-full">
@@ -85,37 +87,38 @@ export default function PersonalProjects() {
                 </p>
 
                 <h3 className="text-2xl sm:text-4xl font-bold mb-5 break-words">
-                  JSON to Java POJO
+                  JSON to Code
                 </h3>
 
                 <p className="text-gray-400 text-base sm:text-lg leading-8 mb-8">
-                  A browser-based developer tool that turns API responses and
-                  nested JSON structures into clean, production-ready Java POJO
-                  classes.
+                  A browser-based developer tool that converts JSON data into
+                  clean code models for Java, C#, and TypeScript, making it
+                  easier to work with API responses and structured payloads.
                 </p>
 
                 <ul className="text-gray-400 space-y-3 mb-8">
-                  <li>Configure class names, packages, type mappings, and annotations.</li>
-                  <li>Shape generated models for real backend API responses.</li>
-                  <li>Keep payloads private with browser-only processing.</li>
+                  <li>Generate Java, C#, and TypeScript models from JSON.</li>
+                  <li>Handle nested JSON structures and API response payloads.</li>
+                  <li>Process data directly in the browser for better privacy.</li>
                 </ul>
 
               </div>
 
               <div className="flex flex-wrap gap-3 mb-8">
                 <span className="tech-badge">Java</span>
+                <span className="tech-badge">C#</span>
+                <span className="tech-badge">TypeScript</span>
                 <span className="tech-badge">JSON</span>
-                <span className="tech-badge">Browser-only</span>
                 <span className="tech-badge">React</span>
                 <span className="tech-badge">Vercel</span>
               </div>
 
               <a
-                href="https://json-to-java-pojo.vercel.app/"
+                href="https://json-to-code.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="glass-button self-start text-white font-semibold"
-                aria-label="Open JSON to Java POJO live project"
+                aria-label="Open JSON to Code live project"
               >
                 View Project
                 <ExternalLink size={18} aria-hidden="true" />
