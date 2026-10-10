@@ -12,7 +12,7 @@ export default function Hero() {
     <section className="min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
       <div className="relative w-full max-w-6xl mx-auto">
         <motion.div
-          className="relative z-20 w-full lg:max-w-[58%]"
+          className="hero-copy relative z-20 w-full lg:max-w-[58%]"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -86,7 +86,7 @@ export default function Hero() {
         <img
           src={`${import.meta.env.BASE_URL}images/moses-cartoon.png`}
           alt="Cartoon portrait of Moses Mandraju"
-          className="relative z-10 mx-auto mt-8 h-[min(38vh,320px)] max-w-full object-contain object-bottom md:h-[min(50vh,420px)] xl:absolute xl:right-[42%] xl:top-1/2 xl:mx-0 xl:mt-0 xl:h-[min(70vh,550px)] xl:max-w-none xl:-translate-y-1/2"
+          className="hero-portrait relative z-10 mx-auto mt-8 h-[min(38vh,320px)] max-w-full object-contain object-bottom md:h-[min(50vh,420px)] xl:absolute xl:right-[42%] xl:top-1/2 xl:mx-0 xl:mt-0 xl:h-[min(70vh,550px)] xl:max-w-none xl:-translate-y-1/2"
         />
       </div>
     </section>

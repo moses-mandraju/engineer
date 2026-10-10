@@ -376,6 +376,23 @@ html.theme-light .theme-toggle {
     0 0 20px rgba(34,211,238,.25);
 }
 
+@media (min-width: 769px) and (max-width: 1279px) {
+    .hero-copy {
+        width: 62%;
+        max-width: 62%;
+    }
+
+    .hero-portrait {
+        position: absolute;
+        top: 50%;
+        right: 3%;
+        height: min(82vh, 460px);
+        max-width: none;
+        margin: 0;
+        transform: translateY(-50%);
+    }
+}
+
 @media (max-width: 768px) {
     .site-nav {
         backdrop-filter: none;
