@@ -544,3 +544,28 @@ html.theme-light .hero-workspace-image-light {
         box-shadow: none;
     }
 }
+
+
+/* Tighten the Stats-to-About transition on phones and mobile browsers using
+   Desktop site mode. Desktop/laptop spacing remains unchanged. */
+@media (max-width: 768px) {
+    .stats-section {
+        padding-bottom: 3rem;
+    }
+
+    .about-section {
+        padding-top: 2.5rem;
+    }
+}
+
+/* Desktop-site mode on touch devices often reports a tablet-sized CSS width,
+   so also apply compact section spacing when the pointer is coarse. */
+@media (min-width: 769px) and (pointer: coarse) {
+    .stats-section {
+        padding-bottom: 3rem;
+    }
+
+    .about-section {
+        padding-top: 2.5rem;
+    }
+}

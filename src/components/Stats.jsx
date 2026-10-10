@@ -30,7 +30,7 @@ export default function Stats() {
 
   return (
 
-    <section className="pb-28 sm:pb-40 px-6 sm:px-8">
+    <section className="stats-section pb-28 sm:pb-40 px-6 sm:px-8">
 
       <div className="max-w-7xl mx-auto">
 

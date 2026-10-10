@@ -4,7 +4,7 @@ export default function About() {
 
   return (
 
-    <section id="about" className="scroll-mt-28 px-6 sm:px-8 py-24 sm:py-32">
+    <section id="about" className="about-section scroll-mt-28 px-6 sm:px-8 py-24 sm:py-32">
 
       <div className="max-w-7xl mx-auto">
 
