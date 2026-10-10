@@ -415,6 +415,37 @@ html.theme-light .theme-toggle {
     }
 }
 
+@media (min-width: 769px) and (pointer: coarse),
+       (min-width: 769px) and (any-pointer: coarse),
+       (min-width: 769px) and (hover: none) {
+    .hero-section {
+        min-height: 0;
+        align-items: flex-start;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-copy {
+        width: 48%;
+        max-width: 48%;
+    }
+
+    .hero-copy > div:last-child {
+        column-gap: .75rem;
+    }
+
+    .hero-portrait {
+        position: absolute;
+        top: 50%;
+        right: 16%;
+        height: clamp(260px, 68vh, 460px);
+        max-width: none;
+        margin: 0;
+        transform: translateY(-50%);
+        translate: none;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-copy > div:first-child {
         margin-bottom: 1.25rem;
