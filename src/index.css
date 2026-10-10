@@ -376,6 +376,52 @@ html.theme-light .theme-toggle {
     0 0 20px rgba(34,211,238,.25);
 }
 
+/* Theme-matched workspace art sits behind the live hero content.
+   The image assets include transparent fades, so the site's existing gradients
+   and particles remain visible through the left and lower edges. */
+.hero-workspace-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hero-workspace-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+    user-select: none;
+}
+
+.hero-workspace-image-dark {
+    display: block;
+}
+
+.hero-workspace-image-light {
+    display: none;
+}
+
+html.theme-light .hero-workspace-image-dark {
+    display: none;
+}
+
+html.theme-light .hero-workspace-image-light {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Keep the narrow-screen hero uncluttered; the separate portrait and
+       theme gradients provide the visual interest on phones. */
+    .hero-workspace-background {
+        display: none;
+    }
+}
+
 @media (max-width: 1279.98px) {
     .hero-section {
         min-height: 0;

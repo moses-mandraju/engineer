@@ -9,8 +9,21 @@ export default function Hero() {
   const shouldAnimateText = !isMobile && !reduceMotion;
 
   return (
-    <section className="hero-section min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
-      <div className="relative w-full max-w-6xl mx-auto">
+    <section className="hero-section relative isolate min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
+      <div className="hero-workspace-background" aria-hidden="true">
+        <img
+          src={`${import.meta.env.BASE_URL}images/hero-workspace-dark.webp`}
+          alt=""
+          className="hero-workspace-image hero-workspace-image-dark"
+        />
+        <img
+          src={`${import.meta.env.BASE_URL}images/hero-workspace-light.webp`}
+          alt=""
+          className="hero-workspace-image hero-workspace-image-light"
+        />
+      </div>
+
+      <div className="relative z-10 w-full max-w-6xl mx-auto">
         <motion.div
           className="hero-copy relative z-20 w-full lg:max-w-[58%]"
           initial={{ opacity: 0, y: 40 }}
