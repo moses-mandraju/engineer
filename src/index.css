@@ -387,15 +387,19 @@ html.theme-light .theme-toggle {
 
 @media (min-width: 769px) and (max-width: 1279.98px) {
     .hero-copy {
-        width: 62%;
-        max-width: 62%;
+        width: 48%;
+        max-width: 48%;
+    }
+
+    .hero-copy > div:last-child {
+        column-gap: .75rem;
     }
 
     .hero-portrait {
         position: absolute;
         top: 50%;
-        right: clamp(18%, calc(42% - (1280px - 100vw)), 42%);
-        height: clamp(280px, 72vh, 460px);
+        right: 16%;
+        height: clamp(260px, 68vh, 460px);
         max-width: none;
         margin: 0;
         transform: translateY(-50%);
