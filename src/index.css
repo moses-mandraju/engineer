@@ -546,26 +546,28 @@ html.theme-light .hero-workspace-image-light {
 }
 
 
-/* Tighten the Stats-to-About transition on phones and mobile browsers using
-   Desktop site mode. Desktop/laptop spacing remains unchanged. */
+/* Keep the Stats-to-About transition compact on phones and mobile browsers
+   using Desktop site mode. Avoid stacking large section paddings on short screens. */
 @media (max-width: 768px) {
     .stats-section {
-        padding-bottom: 3rem;
+        padding-bottom: 0.75rem !important;
     }
 
     .about-section {
-        padding-top: 2.5rem;
+        padding-top: 0.75rem !important;
     }
 }
 
-/* Desktop-site mode on touch devices often reports a tablet-sized CSS width,
-   so also apply compact section spacing when the pointer is coarse. */
-@media (min-width: 769px) and (pointer: coarse) {
+/* Desktop-site mode on touch devices can report a tablet-sized CSS viewport.
+   Cover both coarse-pointer and no-hover browsers without changing laptop spacing. */
+@media (min-width: 769px) and (max-width: 1024px) and
+       (any-pointer: coarse),
+       (min-width: 769px) and (max-width: 1024px) and (hover: none) {
     .stats-section {
-        padding-bottom: 3rem;
+        padding-bottom: 0.75rem !important;
     }
 
     .about-section {
-        padding-top: 2.5rem;
+        padding-top: 0.75rem !important;
     }
 }
