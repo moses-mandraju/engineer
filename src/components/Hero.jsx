@@ -9,7 +9,7 @@ export default function Hero() {
   const shouldAnimateText = !isMobile && !reduceMotion;
 
   return (
-    <section className="min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
+    <section className="hero-section min-h-screen flex items-center px-6 sm:px-8 overflow-x-hidden">
       <div className="relative w-full max-w-6xl mx-auto">
         <motion.div
           className="hero-copy relative z-20 w-full lg:max-w-[58%]"

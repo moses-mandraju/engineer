@@ -376,7 +376,16 @@ html.theme-light .theme-toggle {
     0 0 20px rgba(34,211,238,.25);
 }
 
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (max-width: 1279.98px) {
+    .hero-section {
+        min-height: 0;
+        align-items: flex-start;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279.98px) {
     .hero-copy {
         width: 62%;
         max-width: 62%;
@@ -385,15 +394,45 @@ html.theme-light .theme-toggle {
     .hero-portrait {
         position: absolute;
         top: 50%;
-        right: 3%;
-        height: min(82vh, 460px);
+        right: clamp(18%, calc(42% - (1280px - 100vw)), 42%);
+        height: clamp(280px, 72vh, 460px);
         max-width: none;
         margin: 0;
         transform: translateY(-50%);
     }
 }
 
+@media (min-width: 1280px) {
+    .hero-portrait {
+        right: 42%;
+        top: 50%;
+        height: min(70vh, 550px);
+        margin: 0;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero-copy > div:first-child {
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-copy > div:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+
+    .hero-copy p {
+        margin-top: 1.25rem;
+    }
+
+    .hero-copy > div:last-child {
+        margin-top: 2rem;
+    }
+
+    .hero-portrait {
+        height: clamp(190px, 26vh, 240px);
+        margin-top: 1.5rem;
+    }
+
     .site-nav {
         backdrop-filter: none;
         background: rgba(9,9,9,.86);
