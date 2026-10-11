@@ -462,8 +462,9 @@ html.theme-light .hero-workspace-image-light {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero-portrait {
-        right: 34%;
-        top: 1.3rem;
+        right: 29%;
+        top: -0.1rem;
+        height: min(70vh, 550px);
     }
 }
 
