@@ -443,52 +443,27 @@ html.theme-light .hero-workspace-image-light {
 
     .hero-portrait {
         position: absolute;
-        top: 50%;
+        top: 6rem;
         right: 16%;
-        height: clamp(260px, 68vh, 460px);
+        height: clamp(260px, 45vh, 420px);
         max-width: none;
         margin: 0;
-        transform: translateY(-50%);
     }
 }
 
 @media (min-width: 1280px) {
     .hero-portrait {
-        right: 42%;
-        top: 50%;
+        right: 45%;
+        top: calc(50% - 1.3rem);
         height: min(70vh, 550px);
         margin: 0;
     }
 }
 
-@media (min-width: 769px) and (pointer: coarse),
-       (min-width: 769px) and (any-pointer: coarse),
-       (min-width: 769px) and (hover: none) {
-    .hero-section {
-        min-height: 0;
-        align-items: flex-start;
-        padding-top: 7rem;
-        padding-bottom: 3rem;
-    }
-
-    .hero-copy {
-        width: 48%;
-        max-width: 48%;
-    }
-
-    .hero-copy > div:last-child {
-        column-gap: .75rem;
-    }
-
+@media (min-width: 769px) and (max-width: 1024px) {
     .hero-portrait {
-        position: absolute;
-        top: 50%;
-        right: 16%;
-        height: clamp(260px, 68vh, 460px);
-        max-width: none;
-        margin: 0;
-        transform: translateY(-50%);
-        translate: none;
+        right: 34%;
+        top: 1.3rem;
     }
 }
 
