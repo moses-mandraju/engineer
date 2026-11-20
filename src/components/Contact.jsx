@@ -46,7 +46,7 @@ GitHub
 
 <a
 className="glass-button justify-center sm:justify-start"
-href="https://www.linkedin.com/in/moses-m-5a38b0195/"
+href="https://www.linkedin.com/in/moses-mandraju-5a38b0195/"
 target="_blank"
 >
 

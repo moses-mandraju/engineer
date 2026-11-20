@@ -27,7 +27,7 @@ const projects = [
     ],
   },
   {
-    title: "IVAPP",
+    title: "Verizon IVAPP – Java Backend Development",
     organization: "Infosys",
     client: "Verizon",
     designation: "Technology Analyst",

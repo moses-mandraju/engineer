@@ -77,7 +77,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/moses-m-5a38b0195/"
+              href="https://www.linkedin.com/in/moses-mandraju-5a38b0195/"
               target="_blank"
               rel="noreferrer"
               className="glass-button justify-center sm:justify-start"
@@ -88,6 +88,8 @@ export default function Hero() {
 
             <a
               href={`${import.meta.env.BASE_URL}Moses_M_Java_Full_Stack_Developer.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass-button justify-center sm:justify-start"
             >
               <FileText size={18} />
